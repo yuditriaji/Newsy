@@ -1,1 +1,1 @@
-import {default} from "./firebase"
+export {default} from "./firebase"
