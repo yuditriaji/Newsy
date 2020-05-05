@@ -1,10 +1,10 @@
-import app from "firebase/app"
+import app from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
 
 import firebaseConfig from "./config";
 
-class firebase {
+class Firebase {
     constructor() {
         app.initializeApp(firebaseConfig);
         this.app = app;
@@ -12,14 +12,15 @@ class firebase {
         this.db = app.firestore();
     }
 
+
     async register(name, email, password) {
         const newUser = await this.auth.createUserWithEmailAndPassword(
             email, password
         );
             
-        return newUser, user, updateProfile({
+        return newUser.user.updateProfile({
             displayName: name
-        })
+        });
     }
 
     login(email, password){
@@ -35,5 +36,5 @@ class firebase {
     }
 }
 
-const firebase = new firebase();
+const firebase = new Firebase();
 export default firebase;
