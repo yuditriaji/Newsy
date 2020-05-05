@@ -20,7 +20,7 @@ import {
 import News from './pages/News';
 import Profile from './pages/Profile';
 import Search from './pages/Search';
-import Submit from './pages/Trending';
+import Submit from './pages/Submit';
 import Trending from './pages/Trending';
 import EditProfile from './pages/Auth/EditProfile';
 import Signup from './pages/Auth/SignUp';
