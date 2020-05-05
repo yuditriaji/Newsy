@@ -1,4 +1,4 @@
-export default function validateResetPassword(values){
+export default function validatePasswordReset(values){
     let errors = {};
 
     //email errros
