@@ -4,7 +4,7 @@ export default function validateCreateLink(values){
     //Description Errors
     if(!values.description){
         errors.description = "A Description is Required";
-    }else if (!values.description.length < 10 ){
+    }else if (values.description.length < 10 ){
         errors.description = "Your description must be at least 10 characters";
     }
 
