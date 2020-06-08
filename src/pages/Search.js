@@ -35,8 +35,8 @@ const Search = () => {
     function handleChange(evt) {
         if(evt.key === "Enter") {
             setFilter(evt.target.value);
+            console.log("haha");
         }
-        console.log("haha");
     }
 
     function handleSearch() {
